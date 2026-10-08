@@ -21,12 +21,15 @@ const cards = [
   { id: 5, name: "Guardiã das pá", type: "madeira", attack: 10, defense: 6 },
 ];
 
+const carta = cards.length.toString();
+
 function App() {
   return (
     <main>
       <h1>A minha coleção</h1>
 
       <>
+      <h2>Tenho {carta} cartas</h2>
         {cards.map((card) => (
           <Card 
             key={card.id} 
