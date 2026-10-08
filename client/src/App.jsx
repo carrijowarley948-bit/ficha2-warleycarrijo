@@ -23,8 +23,10 @@ const cards = [
 
 const carta = cards.length.toString();
 
+
 function App() {
   return (
+    
     <main>
       <h1>A minha coleção</h1>
 

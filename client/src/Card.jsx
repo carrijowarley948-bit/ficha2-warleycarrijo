@@ -7,6 +7,12 @@ const Card = ({ name, type, attack, defense }) => {
       <p><strong>Tipo:</strong> {type}</p>
       <p><strong>Ataque:</strong> {attack}</p>
       <p><strong>Defesa:</strong> {defense}</p>
+
+      {attack >= 6 && (
+        <span>
+          forte
+        </span>
+      )}
     </>
   );
 };
