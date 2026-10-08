@@ -13,24 +13,23 @@
 import React from 'react';
 import Card from './Card'; 
 
-
 const cards = [
-  { name: "Dragão de Cobalto", type: "Criatura", attack: 7, defense: 5 },
-  { name: "Guardiã das Marés", type: "Criatura", attack: 4, defense: 8 },
-  { name: "Guardiã das Goiabas", type: "mega_Goiaba", attack: 999, defense: 999 },
-  { name: "Guardiã das Marmitas", type: "caixa", attack: 2, defense: 20 },
-  { name: "Guardiã das pá", type: "madeira", attack: 10, defense: 6 },
+  { id: 1, name: "Dragão de Cobalto", type: "Criatura", attack: 7, defense: 5 },
+  { id: 2, name: "Guardiã das Marés", type: "Criatura", attack: 4, defense: 8 },
+  { id: 3, name: "Guardiã das Goiabas", type: "mega_Goiaba", attack: 999, defense: 999 },
+  { id: 4, name: "Guardiã das Marmitas", type: "caixa", attack: 2, defense: 20 },
+  { id: 5, name: "Guardiã das pá", type: "madeira", attack: 10, defense: 6 },
 ];
 
 function App() {
   return (
     <main>
       <h1>A minha coleção</h1>
-      
+
       <>
         {cards.map((card) => (
           <Card 
-            key={card.name} 
+            key={card.id} 
             name={card.name}
             type={card.type}
             attack={card.attack}
